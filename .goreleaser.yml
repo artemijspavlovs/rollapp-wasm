@@ -103,7 +103,7 @@ builds:
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
 #  - id: "rollappd-windows"
-    main: ./rollappd
+#    main: ./rollappd
 #    binary: rollappd
 #    env:
 #      - CGO_ENABLED=1
