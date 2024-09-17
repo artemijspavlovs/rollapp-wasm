@@ -11,7 +11,7 @@ env:
 
 builds:
   - id: "rollappd-darwin"
-    main: ./cmd/rollappd
+    main: ./rollappd
     binary: rollappd
     env:
       - CGO_ENABLED=1
@@ -34,7 +34,7 @@ builds:
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
   - id: "rollappd-darwin-arm64"
-    main: ./cmd/rollappd
+    main: ./rollappd
     binary: rollappd
     env:
       - CGO_ENABLED=1
@@ -57,7 +57,7 @@ builds:
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
   - id: "rollappd-linux"
-    main: ./cmd/rollappd
+    main: ./rollappd
     binary: rollappd
     env:
       - CGO_ENABLED=1
@@ -80,7 +80,7 @@ builds:
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
   - id: "rollappd-linux-arm64"
-    main: ./cmd/rollappd
+    main: ./rollappd
     binary: rollappd
     env:
       - CGO_ENABLED=1
@@ -103,7 +103,7 @@ builds:
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
 #  - id: "rollappd-windows"
-#    main: ./cmd/rollappd
+    main: ./rollappd
 #    binary: rollappd
 #    env:
 #      - CGO_ENABLED=1
