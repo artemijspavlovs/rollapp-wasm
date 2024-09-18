@@ -35,7 +35,7 @@ jobs:
         run: echo "TM_VERSION=$(go list -m github.com/tendermint/tendermint | sed 's:.* ::')" >> $GITHUB_ENV
 
       - name: Extract BECH32_PREFIX
-        run: echo "BECH32_PREFIX=mock" >> $GITHUB_ENV
+        run: echo BECH32_PREFIX=mock >> $GITHUB_ENV
 
       - name: Release publish
         run: make release
