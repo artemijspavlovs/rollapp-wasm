@@ -84,11 +84,11 @@ proto-clean:
 ###                                Releasing                                ###
 ###############################################################################
 
-PACKAGE_NAME:=github.com/dymensionxyz/rollapp-evm
+PACKAGE_NAME:=github.com/dymensionxyz/rollapp-wasm
 GOLANG_CROSS_VERSION  = v1.22
 GOPATH ?= '$(HOME)/go'
 release-dry-run:
-	docker run \
+	podman run \
 		--rm \
 		--privileged \
 		-e CGO_ENABLED=1 \
