@@ -30,7 +30,7 @@ builds:
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
       - -X github.com/tendermint/tendermint/version.TMCoreSemVer={{.Env.TM_VERSION}}
-      - -X github.com/dymensionxyz/rollapp-evm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
+      - -X github.com/dymensionxyz/rollapp-wasm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
   - id: "rollappd-darwin-arm64"
@@ -53,7 +53,7 @@ builds:
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
       - -X github.com/tendermint/tendermint/version.TMCoreSemVer={{.Env.TM_VERSION}}
-      - -X github.com/dymensionxyz/rollapp-evm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
+      - -X github.com/dymensionxyz/rollapp-wasm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
   - id: "rollappd-linux"
@@ -76,7 +76,7 @@ builds:
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
       - -X github.com/tendermint/tendermint/version.TMCoreSemVer={{.Env.TM_VERSION}}
-      - -X github.com/dymensionxyz/rollapp-evm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
+      - -X github.com/dymensionxyz/rollapp-wasm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
   - id: "rollappd-linux-arm64"
@@ -99,7 +99,7 @@ builds:
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
       - -X github.com/tendermint/tendermint/version.TMCoreSemVer={{.Env.TM_VERSION}}
-      - -X github.com/dymensionxyz/rollapp-evm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
+      - -X github.com/dymensionxyz/rollapp-wasm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
       - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
       - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
 #  - id: "rollappd-windows"
@@ -124,7 +124,7 @@ builds:
 #      - -X github.com/cosmos/cosmos-sdk/version.BuildTags={{.Env.BUILD_TAGS}}
 #      - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
 #      - -X github.com/tendermint/tendermint/version.TMCoreSemVer={{.Env.TM_VERSION}}
-#      - -X github.com/dymensionxyz/rollapp-evm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
+#      - -X github.com/dymensionxyz/rollapp-wasm/app.AccountAddressPrefix={{.Env.BECH32_PREFIX}}
 #      - -X github.com/dymensionxyz/dymension-rdk/x/rollappparams/types.Version={{.Commit}}
 #      - -X github.com/dymensionxyz/dymint/version.Commit={{.Commit}}
 
